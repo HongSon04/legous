@@ -1,0 +1,126 @@
+section{
+  .containerAdmin{
+    .box-banner{
+      .container-banner_admin{
+        .banner_admin_left{
+            .img_banner_admin-options{
+              border: 2px solid $-white;
+              cursor: pointer;
+
+              &.active{
+              border: 2px solid $-blue;
+               
+              }
+            }
+            a{
+              text-decoration: none;
+              .img_banner_admin_add{
+                height: 100px;
+                background-color: $neutral60;
+                i{
+                  color: $-white;
+                }
+              }
+            }
+          }
+        }
+        .banner_admin_right{
+          .content_banner_right{
+            .img_banner_admin{
+                width: 307px;
+                height: 344px;
+             
+              &img{
+                max-width: 100%;
+                max-height: 100%;
+                object-fit: cover;
+              }
+            }
+          }
+          .banner_admin{
+            background: linear-gradient(107deg, #B3261E 0%, rgba(239, 49, 38, 0.60) 82.62%);
+            display: none !important;
+            transform: translateY(100%);
+            opacity: 0;
+            &.active{
+              opacity: 1;
+              display: flex !important;
+              transform: translateY(0);
+            }
+            .content_banner_left{
+              width: 50%;
+              .text_right_banner{
+
+                .text_bottom{
+                  color: $-white;
+                }
+                .text_main_banner{
+                  max-width: 350px;
+                  span{
+                    color: $-white;
+                    font-size: 36px;
+                    font-weight: 400;
+                    line-height: normal;
+                    letter-spacing: 0.5px;
+                  }
+                }
+                .content_btn_banner_admin{
+                  .btn-banner_left{
+                    button{
+                      padding: 10px 24px;
+                      display: flex;
+                      justify-content: center;
+                      align-items: center;
+                      border-radius: 100px;
+                      background: $light-primary;
+                      cursor: pointer;
+                      color: $-white;
+                    }
+                  }
+                  .btn-banner_right{
+                    button{
+                      display: flex;
+                      justify-content: center;
+                      align-items: center;
+                      gap: 16px;
+                      padding: 10px 24px;
+                      border-radius: 100px;
+
+                      background-color: $-white;
+                      i,span{
+                        color: $light-primary;
+                        text-align: center;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+          
+          
+          .options_banner_admin{
+            .container-options_banner{
+              display: inline-block;
+
+              .options_banner{
+                width: 200px;
+                height: 125px;
+                cursor: pointer;
+                border: 2px solid $neutral80;
+                &.active{
+                  border: 2px solid $-blue;
+                }
+                &img{
+                  
+                  max-width: 100%;
+                  height: 100%;
+                  object-fit: contain;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }

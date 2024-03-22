@@ -1,0 +1,183 @@
+body {
+  &.dark {
+    #mainAdmin {
+      .manageCoupon_itemsText {
+        .col-12 {
+          span {
+            color: black !important;
+          }
+        }
+      }
+      #paging {
+        .pagination__item {
+          a {
+            color: $-white !important;
+          }
+        }
+      }
+      .container-products {
+        .cart {
+          span,
+          h1 {
+            color: black !important;
+          }
+        }
+      }
+      .container-banner_admin {
+        .banner_admin_right {
+          .content_btn_banner_admin {
+            .btn-banner_right {
+              span {
+                color: black !important;
+              }
+            }
+          }
+        }
+      }
+      .notifiAdminText {
+        span {
+          color: black !important;
+        }
+      }
+      .titleSaleListCoupon {
+        color: black !important;
+      }
+      .logo_name,
+      span,
+      h1 {
+        color: $-white !important;
+      }
+      .localDashboard {
+        .client-edit {
+          color: black !important;
+        }
+        .h2_dashboard {
+          color: $-white !important;
+        }
+        .aHref1 {
+          color: $-white !important;
+        }
+      }
+      background-color: #15192a;
+      transition: 0.5s;
+      .dashboard {
+        .containerAdmin {
+          .owl-carousel {
+            .slider_contain {
+              background-color: #1c2339 !important;
+              p,
+              h5,
+              h6,
+              .fa-ellipsis-v,
+              span {
+                color: $-white !important;
+              }
+            }
+          }
+        }
+        .top {
+          background-color: #1c2339;
+          border-color: #1c2339;
+        }
+      }
+      nav {
+        background-color: #1c2339;
+        border-color: #1c2339;
+        .menu-items {
+          .logout-mode {
+          }
+        }
+        .logo-name {
+          .logo_name {
+            color: $-white;
+          }
+        }
+        .menu-items {
+          li {
+            span {
+              color: $-white;
+            }
+            i {
+              color: $-white;
+            }
+          }
+          .nav-links {
+            li {
+              a {
+                &:hover {
+                  i {
+                    color: #ccc;
+                  }
+                  .link-name {
+                    color: #ccc;
+                  }
+                }
+              }
+            }
+          }
+          .logout-mode {
+            .mode {
+              .mode-toggle {
+                .switch {
+                  &:before {
+                    left: 20px !important;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    &::-webkit-scrollbar-thumb {
+      &:hover {
+        background: #3a3b3c;
+      }
+    }
+    .activity-data {
+      &::-webkit-scrollbar-thumb {
+        &:hover {
+          background: #3a3b3c;
+        }
+      }
+    }
+
+    .dashboard {
+      .top {
+        .info-user {
+          i {
+            color: $-white;
+          }
+        }
+      }
+    }
+
+    li {
+      a {
+        &:hover {
+          &:before {
+            background-color: #ccc;
+          }
+        }
+      }
+    }
+    .headMobie {
+      background-color: #1c2339;
+      #menuButton {
+        i {
+          color: $-white;
+        }
+      }
+      .logo-name {
+        .logo_name {
+          color: $-white !important;
+        }
+      }
+      #searchButtonBar {
+        i {
+          color: $-white;
+        }
+      }
+    }
+  }
+}

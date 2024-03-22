@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/assets/resources/sass/css/app.css">
+    <link rel="icon" type="image/x-icon" href="/public/assets/media/images/favicon/favicon.svg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/gh/hung1001/font-awesome-pro@4cac1a6/css/all.css" rel="stylesheet"
+        type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Space+Mono&display=swap"
+        rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="/public/assets/resources/js/jquery.js"></script>
+</head>
+
+<body>
+    <div class="container-full por">
+        <!-- header start -->
+        <header class="header desktop flex-full width-full flex-center pof">
+            <div class="header__inner flex-full flex-between por v-center">
+                <!-- header respon nav start -->
+                <ul class="header__nav header__nav-respon">
+                    <li class="header__nav__item header__nav-respon__item">
+                        <button class="icon-btn open-respon-btn"><i class="fal fa-bars"></i></button>
+                    </li>
+                </ul>
+                <!-- header respon nav end -->
+                <img src="/public/assets/media/images/logo.svg" alt="" class="logo">
+                <ul class="header__nav flex g60">
+                    <li class="header__nav__item"><a href="#" class="header__nav__link">Trang chủ</a></li>
+                    <li class="header__nav__item por">
+                        <a href="#" class="header__nav__link">Cửa hàng</a>
+                        <div class="flex-between header__subnav__wrapper poa box-shadow1 p20 rounded-8">
+                            <ul class="header__subnav flex-full flex-column g6">
+                                <h4 class="title-medium header__subnav__title ttc">mô hình</h4>
+                                <li class="header__nav__item header__subnav__item">
+                                    <a href="#" class="header__nav__link header__subnav__link ttu">naruto</a>
+                                </li>
+                                <li class="header__nav__item header__subnav__item">
+                                    <a href="#" class="header__nav__link header__subnav__link ttu">one piece</a>
+                                </li>
+                                <li class="header__nav__item header__subnav__item">
+                                    <a href="#" class="header__nav__link header__subnav__link ttu">dragon ball</a>
+                                </li>
+                                <li class="header__nav__item header__subnav__item">
+                                    <a href="#" class="header__nav__link header__subnav__link ttu">jujutsu kaisen</a>
+                                </li>
+                                <li class="header__nav__item header__subnav__item">
+                                    <a href="#" class="header__nav__link header__subnav__link ttu">kimetsu no yaiba</a>
+                                </li>
+                            </ul>
+                            <ul class="header__subnav flex-full flex-column g6">
+                                <h4 class="title-medium header__subnav__title ttc">mô hình</h4>
+                                <li class="header__nav__item header__subnav__item">
+                                    <a href="#" class="header__nav__link header__subnav__link ttu">naruto</a>
+                                </li>
+                                <li class="header__nav__item header__subnav__item">
+                                    <a href="#" class="header__nav__link header__subnav__link ttu">one piece</a>
+                                </li>
+                                <li class="header__nav__item header__subnav__item">
+                                    <a href="#" class="header__nav__link header__subnav__link ttu">dragon ball</a>
+                                </li>
+                                <li class="header__nav__item header__subnav__item">
+                                    <a href="#" class="header__nav__link header__subnav__link ttu">jujutsu kaisen</a>
+                                </li>
+                                <li class="header__nav__item header__subnav__item">
+                                    <a href="#" class="header__nav__link header__subnav__link ttu">kimetsu no yaiba</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="header__nav__item por">
+                        <a href="#" class="header__nav__link">Khác</a>
+                        <div class="flex-between header__subnav__wrapper poa box-shadow1 p20 rounded-8 g30">
+                            <ul class="header__subnav flex-full flex-column">
+                                <li class="header__nav__item header__subnav__item">
+                                    <a href="#" class="header__nav__link header__subnav__link ttu">liên hệ</a>
+                                </li>
+                                <li class="header__nav__item header__subnav__item">
+                                    <a href="#" class="header__nav__link header__subnav__link ttu">trợ giúp</a>
+                                </li>
+                                <li class="header__nav__item header__subnav__item">
+                                    <a href="#" class="header__nav__link header__subnav__link ttu">về chúng tôi</a>
+                                </li>
+                                <li class="header__nav__item header__subnav__item">
+                                    <a href="#" class="header__nav__link header__subnav__link ttu">chính sách bảo
+                                        mật</a>
+                                </li>
+                                <li class="header__nav__item header__subnav__item">
+                                    <a href="#" class="header__nav__link header__subnav__link ttu">chính sách hoàn
+                                        tiền</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="header__nav flex g30">
+                    <li class="header__nav__item flex-center">
+                        <button class="icon-btn open-search-box__btn rounded-full">
+                            <i class="far fa-search"></i>
+                        </button>
+                    </li>
+                    <li class="header__nav__item flex-center"><button class="icon-btn" data-elm-function=""><i
+                                class="far fa-shopping-cart"></i></button></li>
+                    <li class="header__nav__item por flex-center">
+                        <!-- guest navigation -->
+                        <a class="btn primary-btn">Đăng ký ngay</a>
+
+                        <!-- customer navigation -->
+                        <!-- <a href="#" class="user-widget flex flex-center g6">
+                      <i class="fal fa-user user-widget__icon"></i>
+                      <div class="username">Username</div>
+                  </a>
+                  <div class="flex-between header__subnav__wrapper poa box-shadow1 p20 rounded-8" style="top: 100%; left: 0;">
+                      <ul class="header__subnav flex-full flex-column g6">
+                          <li class="header__nav__item header__subnav__item">
+                              <a href="#" class="header__nav__link header__subnav__link ttu">Account detail</a>
+                          </li>
+                          <li class="header__nav__item header__subnav__item">
+                              <a href="#" class="header__nav__link header__subnav__link ttu">Log out</a>
+                          </li>
+                      </ul>
+                  </div> -->
+                    </li>
+                </ul>
+
+                <!-- header respon nav start -->
+                <ul class="header__nav header__nav-respon">
+                    <li class="header__nav__item header__nav-respon__item">
+                        <button class="icon-btn open-respon-btn"><i class="fal fa-shopping-cart"></i></button>
+                    </li>
+                </ul>
+                <!-- header respon nav end -->
+
+      </div>
+
+      <!-- header search box start -->
+      <div class="header__search-box pof">
+          <button class="icon-btn close-search-box__btn" style="align-self: flex-end;">
+              <i class="fal fa-times"></i>
+          </button>
+          <form action="" class="form search__form">
+              <div class="form__group flex-center por">
+                  <input type="text" class="form__input search__form__input" placeholder="Nhập tên sản phẩm">
+                  <button class="icon-btn search__form__btn"><i class="far fa-search"></i></button>
+              </div>
+          </form>
+          <div class="search__product__wrapper mia flex-column g16" style="overflow-y: auto; width: 50vw">
+              <!-- single search product start -->
+              <div class="search__product flex-between p20 rounded-8 width-full">
+                  <div class="flex g12">
+                      <div class="search__product__banner">
+                          <img src="/public/assets/media/images/product/v944cyfrwt851.webp" alt="">
+                      </div>
+                      <div class="search__product__info flex-column flex-between">
+                          <a href="" class="search__product__name title-large underline">Itachi - Susano Ribcage</a>
+                          <div class="search__product__price title-medium">2.344.900 VND</div>
+                      </div>
+                  </div>
+                  <div class="flex-between flex-column end">
+                      <button class="icon-btn delete-search-product__btn"><i class="fal fa-times"></i></button>
+                      <div class="flex g12">
+                          <button class="icon-btn"><i class="fal fa-share"></i></button>
+                          <button class="icon-btn love-btn"><i class="fal fa-heart"></i></button>
+                          <button class="icon-btn"><i class="fal fa-shopping-cart"></i></button>
+                      </div>
+                  </div>
+              </div>
+              <!-- single search product end -->
+          </div>
+      </div>
+      <!-- header search box end -->
+
+  </header>
+
+    <!-- header respon fullscreen nav start -->
+    <ul class="header__nav-respon header__nav-respon-full">
+      <li class="header__nav-respon-full__item flex-between v-center">
+          <button class="icon-btn"><i class="fal fa-user"></i></button>
+          <button class="icon-btn close-respon-btn"><i class="fal fa-times"></i></button>
+      </li>
+      <li class="header__nav-respon-full__item flex-between">
+          <a href="#" class="header__nav-respon-full__link">Trang chủ</a>
+      </li>
+      <li class="header__nav-respon-full__item flex-between">
+          <a href="#" class="header__nav-respon-full__link">cửa hàng</a>
+      </li>
+      <li class="header__nav-respon-full__item flex-between">
+          <a href="#" class="header__nav-respon-full__link">liên hệ</a>
+      </li>
+      <li class="header__nav-respon-full__item flex-between">
+          <a href="#" class="header__nav-respon-full__link">tài khoản</a>
+      </li>
+  </ul>
+    <!-- header respon fullscreen nav end -->
+
+    <!-- header end -->
+
+    <!-- cart start -->
+    <main class="section flex-column mt80 g30">
+      <div class="top-rep width-full flex-center">
+        <div class="btn-back">
+         <button class="btn">
+          <i class="fa-solid fa-chevron-left"></i>
+         </button>
+        </div>
+        <div class="search-container">
+          <input type="text" placeholder="Search...">
+          <button type="submit"><i class="fa fa-search"></i></button>
+        </div>
+          <div class="location">
+            <button class="btn">
+              <i class="fa-solid fa-location-dot"></i>
+            </button>
+
+          </div>
+      </div>
+      <div class="container_info_car flex" style="justify-content: space-between;">
+        <div class="main_info-cart width-full flex" style="justify-content: space-between;">
+          <div class="flex g6">
+              <div>
+                <span class="primary-masking-text" style="font-size: 68px; font-weight: bold;">3</span>
+                <span class="primary-masking-text label-large-prominent">SẢN PHẨM</span>
+              </div>
+          </div>
+          <div class="info flex-column g20">
+              <h1 class="text-68">GIỎ HÀNG</h1>
+              <svg xmlns="http://www.w3.org/2000/svg" width="60" height="4" viewBox="0 0 63 4" fill="none">
+                <path d="M1.99219 2H61.0007" stroke="black" stroke-opacity="0.2" stroke-width="4" stroke-linecap="round"/>
+              </svg>
+              <span class="label-large fw-smb">LEGOUS / CART</span>
+          </div>
+        </div>
+        <div class="detele-all">
+          <button class="btn">
+            <i class="delete-size fa-solid fa-trash"></i>
+          </button>
+        </div>
+      </div>
+      <div class="container-cart flex-column flex-center flex-full g20">
+        <!-- cart -->
+        <div class="cart flex-center width-full g16" style="justify-content: space-between;">  
+          <div class="info-cart-start flex flex-center g16">
+            <div class="contain-select flex g12">
+              <div class="select p10 flex-center">
+                <input type="checkbox">
+              </div>
+              <div class="img-cart">
+                <img src="/public/assets/media/images/product/03-0cbde154-2c49.jpg" alt="">
+              </div>
+            </div>
+            <div class="text-cart flex-column g18" style="align-items: flex-start;">
+              <h1 class="title-medium fw-smb" style="word-break: break-all; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; text-overflow: ellipsis; word-break: break-word;">Gấu bearbrick 55cm - MÃ 5009 - Sỉ Lẻ 135k - Sỉ Thùng 130k Thùng 12con Lego</h1>
+              <div class="collection__item flex-center g6">
+                <span class="body-medium">Collection</span>
+                <span class="body-medium fw-smb">NARUTO</span>
+              </div>
+              <div class="prize-rep g30">
+                <div class="priceProduct-rep">
+                  <span class="label-medium-prominent">1.289.099 VNĐ</span>
+            </div>
+
+            <!-- header search box start -->
+            <div class="header__search-box pof">
+                <button class="icon-btn close-search-box__btn" style="align-self: flex-end;">
+                    <i class="fal fa-times"></i>
+                </button>
+                <form action="" class="form search__form">
+                    <div class="form__group flex-center por">
+                        <input type="text" class="form__input search__form__input" placeholder="Nhập tên sản phẩm">
+                        <button class="icon-btn search__form__btn"><i class="far fa-search"></i></button>
+                    </div>
+                </form>
+                <div class="search__product__wrapper mia flex-column g16" style="overflow-y: auto; width: 50vw">
+                    <!-- single search product start -->
+                    <div class="search__product flex-between p20 rounded-8 width-full">
+                        <div class="flex g12">
+                            <div class="search__product__banner">
+                                <img src="/public/assets/media/images/product/v944cyfrwt851.webp" alt="">
+                            </div>
+                            <div class="search__product__info flex-column flex-between">
+                                <a href="" class="search__product__name title-large underline">Itachi - Susano
+                                    Ribcage</a>
+                                <div class="search__product__price title-medium">2.344.900 VND</div>
+                            </div>
+                        </div>
+                        <div class="flex-between flex-column end">
+                            <button class="icon-btn delete-search-product__btn"><i class="fal fa-times"></i></button>
+                            <div class="flex g12">
+                                <button class="icon-btn"><i class="fal fa-share"></i></button>
+                                <button class="icon-btn love-btn"><i class="fal fa-heart"></i></button>
+                                <button class="icon-btn"><i class="fal fa-shopping-cart"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- single search product end -->
+                </div>
+            </div>
+            <div class="quality-reponsive flex">
+              <button class="minus-btn" onclick="handleMinus()"><i class="fa-solid fa-minus"></i></button>
+              <input class="fw-smb" type="text" name="amount" id="amount" value="1">
+              <button class="plus-btn" onclick="handlePlus()"><i class="fa-solid fa-plus"></i></button>
+            </div>
+          </div>
+          <div class="heart">
+            <!--<i class="fas fa-heart pulse"></i> -->
+              <i class="far fa-heart js-heart heart"></i>
+            </div>
+          <div class="priceProduct">
+            <span class="headline-small">1.289.099 VNĐ</span>
+          </div>
+          <div class="quality flex">
+            <button class="minus-btn" onclick="handleMinus()"><i class="fa-solid fa-minus"></i></button>
+            <input class="fw-smb" type="text" name="amount" id="amount" value="1">
+            <button class="plus-btn" onclick="handlePlus()"><i class="fa-solid fa-plus"></i></button>
+          </div>
+          <div class="detele_cart">
+            <button class="btn "><i class="fa-solid fa-xmark"></i></button>
+          </div>
+        </div>
+      </div>
+      <!-- cart end -->
+      <div class="line flex-center">
+        <div style="min-width: 50%; height: 2px; background: #CAC4D0; border-radius: 8px;">
+            <!-- header search box end -->
+
+        </header>
+
+        <!-- header respon fullscreen nav start -->
+        <ul class="header__nav-respon header__nav-respon-full">
+            <li class="header__nav-respon-full__item flex-between v-center">
+                <button class="icon-btn"><i class="fal fa-user"></i></button>
+                <button class="icon-btn close-respon-btn"><i class="fal fa-times"></i></button>
+            </li>
+            <li class="header__nav-respon-full__item flex-between">
+                <a href="#" class="header__nav-respon-full__link">Trang chủ</a>
+            </li>
+            <li class="header__nav-respon-full__item flex-between">
+                <a href="#" class="header__nav-respon-full__link">cửa hàng</a>
+            </li>
+            <li class="header__nav-respon-full__item flex-between">
+                <a href="#" class="header__nav-respon-full__link">liên hệ</a>
+            </li>
+            <li class="header__nav-respon-full__item flex-between">
+                <a href="#" class="header__nav-respon-full__link">tài khoản</a>
+            </li>
+        </ul>
+        <!-- header respon fullscreen nav end -->
+
+        <!-- header end -->
+
+        <!-- cart top bar start -->
+        <div class="mobile-top__bar mobile-top__bar--shop p12 flex-center">
+            <div class="mobile-top__inner flex-full flex-between v-center g12">
+                <button class="icon-btn back-btn"><i class="fal fa-chevron-left"></i></button>
+                <form action="#" class="form mobile__search-form flex-full">
+                    <div class="form__group width-full por">
+                        <button class="icon-btn poa" style="top: 50%; transform: translateY(-50%)">
+                            <i class="fal fa-search"></i>
+                        </button>
+                        <input type="text" class="form__input rounded-100 width-full" style="padding-left: 4rem">
+                    </div>
+                </form>
+                <button class="icon-btn cart-btn"><i class="fal fa-trash-alt"></i></button>
+
+                <!-- guest widget -->
+                <!-- <button class="icon-btn user-btn"><i class="fal fa-user"></i></button> -->
+
+                <!-- member widget -->
+                <!-- <div class="por member-widget">
+                <button class="icon-btn more-btn"><i class="far fa-ellipsis-h"></i></button>
+                <ul class="poa option__list oh p10 box-shadow1 rounded-8">
+                    <li class="option__item">
+                        <a href="#" class="option__link ttc">trang chủ</a>
+                    </li>
+                    <li class="option__item">
+                        <a href="#" class="option__link ttc">chia sẻ</a>
+                    </li>
+                    <li class="option__item">
+                        <a href="#" class="option__link ttc">tìm kiếm</a>
+                    </li>
+                    <li class="option__item">
+                        <a href="#" class="option__link ttc">tin nhắn</a>
+                    </li>
+                    <li class="option__item">
+                        <a href="#" class="option__link ttc">tài khoản của tôi</a>
+                    </li>
+                    <li class="option__item">
+                        <a href="#" class="option__link ttc">báo cáo</a>
+                    </li>
+                    <li class="option__item">
+                        <a href="#" class="option__link ttc">trợ giúp</a>
+                    </li>
+                    <li class="option__item">
+                        <a href="#" class="option__link ttc">phản hồi</a>
+                    </li>
+                </ul>
+            </div> -->
+            </div>
+        </div>
+        <!-- cart top bar end -->
+
+        <!-- cart start -->
+        <main class="cart__main mt80 section">
+            <div class="cart__title flex-between a-end">
+                <div class="flex a-end g6">
+                    <span class="text-46 primary-masking-text" style="line-height: unset;">3</span>
+                    <span class="primary-masking-text ttu">sản phẩm</span>
+                </div>
+                <div class="flex-column a-end g12">
+                    <div class="text-68 ttu">Giỏ hàng</div>
+                    <div class="light-devider" style="width: 10rem; height: .4rem;"></div>
+                    <div class="label-large ttu">legous / cart</div>
+                </div>
+            </div>
+            <div class="cart__product-wrapper mt60">
+                <a href="#" class="cart__product flex-between v-center g12">
+                    <div class="flex g12 v-center">
+                        <div class="mobile"><input type="checkbox"></div>
+                        <div class="cart__product__banner">
+                            <img src="/public/assets/media/images/product/03-0cbde154-2c49.jpg" alt=""
+                                class="img-cover">
+                        </div>
+                    </div>
+                    <div class="row g20 v-center flex-full flex-between">
+                        <div class="flex-column g12">
+                            <div class="title-medium ttu">Product name</div>
+                            <div class="body-medium">Category: Naruto</div>
+                        </div>
+                        <div class="headline-small">1.289.099 VNĐ</div>
+                        <div class="cart__product__qty__form flex g12">
+                            <button class="minus-btn icon-btn"><i class="fa-solid fa-minus"></i></button>
+                            <input class="fw-smb primary-text form__input" type="number" name="amount" id="amount"
+                                value="1" min="1" max="100">
+                            <button class="plus-btn icon-btn"><i class="fa-solid fa-plus"></i></button>
+                        </div>
+                        <button class="icon-btn desktop"><i class="fal fa-times"> </i></button>
+                    </div>
+                </a>
+            </div>
+        </main>
+        <!-- cart end -->
+
+        <!-- cart summary start -->
+        <section class="cart__summary desktop section auto-grid g30">
+            <div class="flex-column g12">
+                <div class="text-68 ttu">Tổng giỏ hàng</div>
+                <div class="light-devider" style="width: 10rem; height: .4rem;"></div>
+                <div class="label-large ttu">legous / giỏ hàng</div>
+            </div>
+            <div class="summary__main">
+                <!-- summary product start -->
+                <div class="summary__product-wrapper flex-column g20">
+                    <!-- single summary product name - price start -->
+                    <div class="summary__product flex v-center g12">
+                        <div class="title-medium ttu summary__product__name">product name fasdffffffffffffffffffff</div>
+                        <div class="light-devider pi20 flex-full" style="height: .1rem"></div>
+                        <div class="title-medium ttu summary__product__price">1.289.089 VNĐ</div>
+                    </div>
+                    <!-- single summary product name - price end -->
+                    <!-- summary product end -->
+
+                    <div class="light-devider flex-full mt12 mb12" style="height: .1rem"></div>
+
+                    <!-- summary shipping method start -->
+                    <div class="title-medium fw-smb">Phương thức vận chuyển</div>
+                    <div class="body-medium">Dựa trên phương thức vận chuyển mà bạn lựa chọn ở bước tiếp theo, chúng tôi
+                        sẽ tính thêm khoản phí tương ứng vào đơn hàng của bạn.</div>
+                    <!-- summary shipping method end -->
+
+                    <div class="light-devider flex-full mt12 mb12" style="height: .1rem"></div>
+
+                    <!-- summary payment method start -->
+                    <div class="title-medium fw-smb">Phương thức thanh toán</div>
+                    <div class="body-medium">Dựa trên phương thức thanh toán mà bạn lựa chọn ở bước tiếp theo, đơn hàng
+                        sẽ được thanh toán nhanh nhất có thể dựa trên lựa chọn của bạn.</div>
+                    <!-- summary payment method end -->
+
+                    <!-- summary total start -->
+                    <div class="flex mt12 v-center g12">
+                        <div class="title-medium">Thuế: </div>
+                        <div class="title medium primary-text fw-bold">10%</div>
+                    </div>
+                    <div class="flex mt12 v-center">
+                        <div class="headline-small">Tổng tiền</div>
+                        <div class="light-devider flex-full pi20" style="height: .1rem"></div>
+                        <div class="primary-masking-text headline-small">9.999.999 VNĐ</div>
+                    </div>
+                    <button class="btn primary-btn rounded-8 ttu" style="background: black; color: white;">
+                        <i class="fal fa-arrow-right"></i>
+                        đi đến thanh toán
+                    </button>
+                    <!-- summary total end -->
+                </div>
+        </section>
+        <!-- cart summary end -->
+
+        <!-- cart bottom bar start -->
+        <div class="cart__bottom-bar p10 mobile">
+            <div class="cart__bottom-bar__inner rounded-8 box-shadow1 p10">
+                <div class="flex-between">
+                    <div class="flex g12 v-center">
+                        <input type="checkbox" id="checkAll">
+                        <label for="checkAll" class="title-medium fw-smb primary-text">Tất cả 3</label>
+                    </div>
+                    <button class="text-btn fw-smb btn rounded-100">
+                        <i class="fal fa-arrow-right"></i>
+                        Thêm mã giả giá
+                    </button>
+                </div>
+                <div class="flex v-center">
+                    <div class="title-large fw-bold">Tổng tiền</div>
+                    <div class="light-devider flex-full mi20" style="height: .1rem"></div>
+                    <div class="body-large primary-masking-text">9.999.999 VNĐ</div>
+                </div>
+                <button class="btn bar-btn rounded-8 ttu mt12 width-full" style="background: black; color: white;">
+                    <i class="fal fa-arrow-right"></i>
+                    đi đến thanh toán
+                </button>
+            </div>
+        </div>
+      </div>
+      <div class="bill-checkout-rep box-shadow3">
+        <div class="contain-bill-rep flex-column g16">
+          <div class="text-top-bill-rep flex" style="justify-content: space-between;">
+            <div class="text-check-bill flex-center g8">
+              <input type="checkbox" style="width: 16px; height: 16px;">
+              <span class="title-small">Tấc cả 3</span>
+            </div>
+            <div class="text-icon-coupon">
+              <i class="fa-solid fa-arrow-right label-large coupon-text"></i>
+              <span class="coupon-text label-large">Add coupon</span>
+            </div>
+          </div>
+            <div class="total-bill-rep flex-center" style="justify-content: space-between;">
+              <span class="title-medium fw-bold">Tổng tiền</span>
+              <div class="line-rep">
+              </div>
+              <span class="toltal-money body-large">9.999.999 VNĐ</span>
+            </div>
+            <button class="btn tonal-btn rounded-4"><i class="fa-solid fa-arrow-right"></i>Đặt hàng
+              ngay</button>
+        </div>
+      </div>
+      <!-- bill check out  end -->
+    </main>
+    <!-- cart end -->
+        <!-- cart bottom bar end -->
+
+        <!-- footer start -->
+        <footer class="footer section auto-grid g60">
+            <div class="footer__infomation flex-column g30">
+                <a href="#" class="logo">
+                    <img src="/public/assets/media/images/logo-dark.svg" alt="" class="logo-image" />
+                </a>
+                <div class="row g30">
+                    <div class="footer-column">
+                        <h3 class="footer-heading ttu">LEGOUS</h3>
+                        <ul class="footer-links">
+                            <li>
+                                <a href="#!" class="footer-link text-btn btn rounded-100">Trang chủ</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="footer-link text-btn btn rounded-100">Cửa hàng</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="footer-link text-btn btn rounded-100">Liên hệ</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="footer-link text-btn btn rounded-100">Về chúng tôi</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3 class="footer-heading ttu">SUPPORT</h3>
+                        <ul class="footer-links">
+                            <li>
+                                <a href="#!" class="footer-link text-btn btn rounded-100">Hướng dẫn xây dựng</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="footer-link text-btn btn rounded-100">Hướng dẫn đặt hàng</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="footer-link text-btn btn rounded-100">Đăng ký thành viên</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="footer-link text-btn btn rounded-100">Đăng ký thành viên</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3 class="footer-heading ttu">SOCIAL</h3>
+                        <ul class="footer-links">
+                            <li>
+                                <a href="#!" class="footer-link text-btn btn rounded-100">Facebook</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="footer-link text-btn btn rounded-100">Zalo</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="footer-link text-btn btn rounded-100">Twitter</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="footer-link text-btn btn rounded-100">Instagram</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__email-form flex-column g30" style="color: white;">
+                <div class="text-46 ttu" style="max-width: 75%;">ĐĂNG KÝ NGAY
+                    CHỈ BẰNG EMAIL</div>
+                <form action="" class="form email__form" method="post" style="width: fit-content">
+                    <div class="form__group por flex">
+                        <input type="text" class="form__input footer__email-input" id="email" placeholder="Email...">
+                        <button type="button" class="btn primary-btn poa form-btn">
+                            <i class="fal fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </form>
+                <span class="body-medium">LEGOUS là một trang web chuyên về mô hình và lego từ các bộ truyện tranh nổi
+                    tiếng cũng như những kiến trúc ở thế giới hiện thực. Mục tiêu của chúng tôi là trở thành một thương
+                    hiệu lớn mạnh trong lĩnh vực này. Chúng tôi sẽ cố gắng hết sức để đạt được nó.</span>
+            </div>
+        </footer>
+        <footer class="footer section footer--mini flex j-start g30">
+            <span class="footer--mini__item body-small flex g6 v-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <path
+                        d="M9.89999 7.6165C10.9667 7.6665 11.2417 8.57484 11.2583 8.99984H12.75C12.6833 7.34984 11.5083 6.3415 9.87499 6.3415C8.03332 6.3415 6.66666 7.49984 6.66666 10.1165C6.66666 11.7332 7.44166 13.6498 9.86666 13.6498C11.7167 13.6498 12.7083 12.2748 12.7333 11.1915H11.2417C11.2167 11.6832 10.8667 12.3415 9.88332 12.3915C8.79166 12.3582 8.33332 11.5082 8.33332 10.1165C8.33332 7.70817 9.39999 7.63317 9.89999 7.6165ZM9.99999 1.6665C5.39999 1.6665 1.66666 5.39984 1.66666 9.99984C1.66666 14.5998 5.39999 18.3332 9.99999 18.3332C14.6 18.3332 18.3333 14.5998 18.3333 9.99984C18.3333 5.39984 14.6 1.6665 9.99999 1.6665ZM9.99999 16.6665C6.32499 16.6665 3.33332 13.6748 3.33332 9.99984C3.33332 6.32484 6.32499 3.33317 9.99999 3.33317C13.675 3.33317 16.6667 6.32484 16.6667 9.99984C16.6667 13.6748 13.675 16.6665 9.99999 16.6665Z"
+                        fill="white" />
+                </svg>
+                /2023 LEGOUS OFFICIAL
+            </span>
+            <a href="#" class="footer--mini__link body-small">Terms of use</a>
+            <a href="#" class="footer--mini__link body-small">Private policy</a>
+            <a href="#" class="footer--mini__link body-small">Return policy</a>
+            <a href="#" class="footer--mini__link body-small">Cookie policy</a>
+            <a href="#" class="footer--mini__link body-small">Support</a>
+        </footer>
+    </div>
+</body>
+
+</html>
+<script src="/public/assets/resources/js/cart.js"></script>
+<script src="/public/assets/resources/js/main.js"></script>
+<script src="/public/assets/resources/js/slickEdit.js"></script>

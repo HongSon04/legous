@@ -1,0 +1,181 @@
+.containerAdmin {
+  .manageCoupon {
+    .manageCoupon_items {
+      background-color: $-white;
+      border-radius: 10px;
+      a {
+        text-decoration: none;
+      }
+      .manageCoupon_itemsSetting {
+        i {
+          font-size: 60px;
+          background: -webkit-linear-gradient(60deg, #ff79ea, #a93cff, #6791ff);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+      }
+      .manageCoupon_itemsText {
+        margin-left: 20px;
+        h2 {
+          color: $light-on-container;
+          font-weight: 700;
+          margin-bottom: 15px;
+        }
+      }
+    }
+  }
+
+  .createCoupon {
+    .createCoupon_left {
+      background-color: $-white;
+      border-radius: 10px;
+      .createCoupon_items {
+        margin-top: 25px;
+        .col-6 {
+          width: calc(50% - 10px) !important;
+          &:last-child {
+            margin-left: 20px;
+          }
+          input {
+            width: 100%;
+            border: unset;
+            border-radius: 10px;
+            background-color: $light-surface-container-highest;
+            padding: 20px 30px 20px 15px;
+            color: $light-on-surface-variant;
+            margin-top: 10px;
+          }
+        }
+        .infoCoupon {
+          input {
+            width: 100%;
+            border: unset;
+            border-radius: 10px;
+            background-color: $light-surface-container-highest;
+            padding: 20px 30px 20px 15px;
+            color: $light-on-surface-variant;
+            margin-top: 10px;
+          }
+        }
+      }
+      .createCouponSubmit {
+        width: 100%;
+        border: unset;
+        border-radius: 10px;
+        background-color: $light-primary;
+        padding: 20px 30px 20px 15px;
+        color: $-white;
+        margin-top: 25px;
+      }
+    }
+
+    .createCoupon_right {
+      background-color: $-white;
+      border-radius: 10px;
+      transition: $trans-bounce;
+      .listCouponHead {
+        h4 {
+          color: $light-on-container;
+        }
+        i {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 11px;
+          width: 25px;
+          height: 25px;
+          border-radius: 50%;
+          background-color: rgba(128, 128, 128, 0.1);
+        }
+      }
+      .listCoupon_item {
+        height: 420px;
+        overflow-y: scroll;
+        .listCoupon_items {
+          margin-top: 20px;
+          border-radius: 10px;
+
+          .col-3 {
+            .saleListCoupon {
+              width: 60px;
+              height: 60px;
+              line-height: 55px;
+              background-color: #b66dff5e;
+              color: $light-on-container-4;
+              display: flex;
+              justify-content: center;
+              border-radius: 10px;
+              transition: $trans-bounce;
+            }
+          }
+          .col-9 {
+            .titleSaleListCoupon {
+              margin-bottom: 15px;
+            }
+          }
+          .buttonShowFeatureCoupon {
+            display: flex;
+            align-items: center;
+            position: relative;
+            i {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              font-size: 11px;
+              width: 25px;
+              height: 25px;
+              border-radius: 50%;
+              background-color: rgba(128, 128, 128, 0.1);
+            }
+            .hiddenFeatureCoupon {
+              display: none;
+              position: absolute;
+              bottom: -50px;
+              right: 5px;
+              ul {
+                background-color: #f7f7f7;
+                width: 120px;
+                border-radius: 10px;
+                li {
+                  text-align: center;
+                  padding: 10px 15px;
+                  border-radius: 10px;
+                  &:hover {
+                    background-color: #eaddff8a;
+                  }
+                  a {
+                    text-decoration: none;
+                    color: $-black;
+                  }
+                }
+              }
+            }
+          }
+          &:hover {
+            background-color: #f7f4ff;
+
+            .col-3 {
+              .saleListCoupon {
+                background-color: $primary90;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.pagination {
+  .paginate_button.page-item.active {
+    a {
+      border-color: #6750a4;
+      background-color: #6750a4;
+      color: $-white;
+    }
+  }
+  .paginate_button.page-item {
+    a {
+      color: #6750a4;
+    }
+  }  
+}

@@ -1,0 +1,63 @@
+.pd150 {
+    padding: 0 15rem;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+
+    tr {
+        border-top: 1px solid #ccc;
+    }
+    th, td {
+        padding: 10px;
+        text-align: center;
+
+        input {
+            width: 1.8rem;
+            height: 1.8rem;
+        }
+    
+        span {
+            font-size: 1.3rem;
+            display:-webkit-box;
+            -webkit-line-clamp:2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            word-break: break-word;
+        }
+
+        .price {
+            display:-webkit-box;
+            -webkit-line-clamp:1;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            word-break: break-word;
+        }
+
+        button {
+            color: $light-primary;
+        }
+    }
+      
+    th {
+        background-color: #f0f0f0;
+    }
+}
+
+.delivered {
+    color: $-blue;
+}
+
+.pending {
+    color: $-green;
+}
+
+.canceled {
+    color: $light-error;
+}
+
+.return {
+    color: $-yellow;
+}

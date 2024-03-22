@@ -1,0 +1,652 @@
+#mainAdmin {
+  .dashboard {
+    .containerAdmin {
+      width: 95%;
+      margin: 0 30px;
+      //      <!----======== Local DashBoard ======== -->
+
+      .localDashboard {
+        .col-12 {
+          .h2_dashboard {
+            color: $light-on-container;
+          }
+          .aHref1 {
+            color: $-black;
+            text-decoration: unset;
+          }
+          .aHref2 {
+            color: $light-surface-tint;
+            text-decoration: unset;
+          }
+          .calenderColor {
+            color: $light-surface-tint;
+            font-size: 14px;
+          }
+          .dateCalender {
+            color: $light-surface-tint;
+          }
+        }
+      }
+
+      //      <!----======== End Local DashBoard ======== -->
+
+      //      <!----======== Owl Carousel ======== -->
+
+      .owl-carousel {
+        .slider_contain {
+          background-color: $-white !important;
+          border-radius: 5px;
+          .date-dashboard {
+            color: $light-secondary;
+          }
+          .slider_items {
+            .label .fa-ellipsis-v {
+              font-size: 24px;
+            }
+
+            .label-large {
+              color: $light-on-container;
+            }
+
+            span {
+              color: #1d192b;
+              font-size: 1.25rem;
+              font-weight: bold;
+            }
+
+            h5 {
+              color: #1d192b;
+              font-size: 1.25rem;
+              font-weight: bold;
+            }
+
+            .buttonWallet {
+              border: transparent;
+              background-color: $-green;
+              width: 45px;
+              height: 45px;
+              border-radius: 5px;
+              .fa-wallet {
+                font-size: 20px;
+              }
+            }
+
+            .slider_items_stonks {
+              p {
+                color: $-green;
+              }
+
+              i {
+                margin-right: 5px;
+                color: $-green;
+                font-size: 18px;
+              }
+            }
+
+            .dashboard-moneyEarn {
+              margin-left: 10px;
+              color: $light-on-container;
+            }
+          }
+        }
+
+        .slider_contain-2 {
+          .slider_items_stonks {
+            p {
+              color: #00b3ff !important;
+            }
+
+            i {
+              color: #00b3ff !important;
+            }
+          }
+
+          .slider_items {
+            .buttonWallet {
+              background-color: #00b3ff !important;
+            }
+          }
+        }
+
+        .slider_contain-3 {
+          .slider_items_stonks {
+            p {
+              color: $light-primary !important;
+            }
+
+            i {
+              color: $light-primary !important;
+            }
+          }
+
+          .slider_items {
+            .buttonWallet {
+              background-color: $light-primary !important;
+            }
+          }
+        }
+
+        .slider_contain-4 {
+          .slider_items_stonks {
+            p {
+              color: $-pink-2 !important;
+            }
+
+            i {
+              color: $-pink-2 !important;
+            }
+          }
+
+          .slider_items {
+            .buttonWallet {
+              background-color: $-pink-2 !important;
+            }
+          }
+        }
+        .slider_contain-5 {
+          .slider_items_stonks {
+            p {
+              color: $-orange !important;
+            }
+
+            i {
+              color: $-orange !important;
+            }
+          }
+
+          .slider_items {
+            .buttonWallet {
+              background-color: $-orange !important;
+            }
+          }
+        }
+      }
+
+      //      <!----======== End Owl Carousel ======== -->
+
+      //      <!----======== Statistical Chart ======== -->
+
+      .statisticalChart {
+        .statisticalChartItems {
+          .customerOrderStatistics {
+            .orderStatistics {
+              background-color: $-white;
+              border-radius: 10px;
+              .myNavTabs {
+                .myNavItem {
+                  .nav-link {
+                    position: relative !important;
+                    color: $light-on-surface-variant;
+                    font-size: 14px;
+                    font-weight: 600;
+                    background-color: $light-surface2;
+                    &:after {
+                      content: "";
+                      position: absolute;
+                      background-color: $light-primary;
+                      height: 3px;
+                      width: 0;
+                      left: 0;
+                      bottom: 0px;
+                      transition: $trans-normal;
+                    }
+                    &.active {
+                      color: $light-primary;
+                    }
+                    &.active:after {
+                      content: "";
+                      width: 100%;
+                    }
+                  }
+                }
+              }
+            }
+            .topUsers {
+              background-color: $-white;
+              border-radius: 10px;
+
+              .headerTopUser {
+                position: relative;
+                p {
+                  color: $light-on-container;
+                }
+                button {
+                  width: 40px;
+                  height: 40px;
+                  background-color: rgba(73, 69, 79, 12%);
+                  border-radius: 9999px;
+
+                  i {
+                    font-size: 16px;
+                  }
+                }
+                .showMoreInfoAdminDashboard {
+                  display: none;
+                  position: absolute;
+                  bottom: -60px;
+                  right: 0;
+                  background-color: #fff;
+                  border-radius: 10px;
+                  text-align: center;
+                  li {
+                    list-style: none;
+                    padding: 10px 20px;
+                    a {
+                      text-decoration: none;
+                      color: $-black;
+                      text-align: center;
+                    }
+                  }
+                }
+              }
+
+              .bodyTopUser {
+                .topUserOder {
+                  .topUserOder_items {
+                    margin: 15px 0;
+                    .topUserOrder__image {
+                      img {
+                        width: 45px;
+                        height: 45px;
+                        border-radius: 9999px;
+                        margin-right: 15px;
+                      }
+                    }
+                    .topUserOrder__info {
+                      .topUserOrder__name {
+                        color: $light-fixed;
+                        color: #1d192b !important;
+                      }
+                      .topUserOrder__role {
+                        color: $light-secondary;
+                      }
+                    }
+                    .topUserOrder_Spend {
+                      .topUserOrder_totalPayed {
+                        color: $light-fixed;
+                        color: #1d192b !important;
+                      }
+                      .topUserOrder_totalOrdered {
+                        color: $light-secondary;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+      //      <!----======== End Statistical Chart ======== -->
+
+      //      <!----======== Recent Order ======== -->
+
+      .recentOrder {
+        .recentOrder_items {
+          background-color: $-white !important;
+          border-radius: 10px;
+          .title-medium {
+            color: $light-on-container;
+            color: #1d192b;
+          }
+          .tableLine {
+            width: 100%;
+            height: 1px;
+            background-color: rgba(0, 0, 0, 0.247);
+            margin: 15px 0;
+          }
+          table {
+            .label-large__product {
+              text-align: left;
+            }
+            tbody {
+              border: transparent !important;
+              color: $-black;
+            }
+            td {
+              border: transparent !important;
+              color: $-black;
+            }
+            tfoot {
+              border: transparent !important;
+              color: $-black;
+            }
+            th {
+              border: transparent !important;
+              background-color: transparent !important;
+              color: $light-outline;
+              color: $-black;
+            }
+            thead {
+              border: transparent !important;
+            }
+            tr {
+              border: transparent !important;
+              background-color: transparent !important;
+              .tableLargeItems {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                input {
+                  margin-right: 10px;
+                }
+                span {
+                  margin-right: 10px;
+                }
+              }
+            }
+
+            .dotTable {
+              width: 8px;
+              height: 8px;
+              border-radius: 9999px;
+              &.green {
+                background-color: $-green;
+              }
+              &.orange {
+                background-color: $-orange;
+              }
+              &.blue {
+                background-color: $-blue;
+              }
+              &.red {
+                background-color: $light-error;
+              }
+              &.black {
+                background-color: $-black;
+              }
+              &.gray {
+                background-color: $-gray;
+              }
+            }
+          }
+        }
+      }
+
+      //      <!----======== End Recent Order ======== -->
+
+      //      <!----======== Overview Dashboard ======== -->
+      .overviewDashboard {
+        .col-12 {
+          .lineDashboard {
+            width: 100%;
+            height: 1px;
+            background-color: rgba(0, 0, 0, 0.349);
+          }
+          .theadoverviewDashboard {
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            position: relative;
+            p {
+              color: $light-on-container;
+            }
+            button {
+              width: 30px;
+              height: 30px;
+              border-radius: 9999px;
+              line-height: 30px;
+              background-color: rgba(73, 69, 79, 0.12);
+              i {
+                font-size: 12px;
+              }
+            }
+            .showMoreInfoAdminDashboard {
+              display: none;
+              position: absolute;
+              bottom: -60px;
+              right: 0;
+              background-color: #fff;
+              border-radius: 10px;
+              text-align: center;
+              li {
+                list-style: none;
+                padding: 10px 20px;
+                a {
+                  text-decoration: none;
+                  color: $-black;
+                  text-align: center;
+                }
+              }
+            }
+          }
+          .vitsitOverview {
+            background-color: $-white;
+            border-radius: 10px;
+            .vitsitOverview_item {
+              .weekyChart {
+                display: flex;
+                justify-content: center;
+                .wekkyChart_item {
+                  .loader {
+                    width: 200px;
+                    position: relative;
+                    transform: rotate(-90deg);
+                    .loading {
+                      margin: 25px 0 0;
+                      position: relative;
+                      width: 100%;
+                      height: 18px;
+                      background-color: #e8edf2;
+                      border-radius: 10px;
+                      .lineLoading {
+                        display: block;
+                        position: absolute;
+                        width: 30%;
+                        height: 100%;
+                        background-color: #6750a4;
+                        box-shadow: 10px;
+                        border-radius: 10px;
+                      }
+                      .lineLoading2 {
+                        display: block;
+                        position: absolute;
+                        width: 40%;
+                        height: 100%;
+                        background-color: #6750a4;
+                        box-shadow: 10px;
+                        border-radius: 10px;
+                      }
+                      .lineLoading3 {
+                        display: block;
+                        position: absolute;
+                        width: 50%;
+                        height: 100%;
+                        background-color: #6750a4;
+                        box-shadow: 10px;
+                        border-radius: 10px;
+                      }
+                      .lineLoading4 {
+                        display: block;
+                        position: absolute;
+                        width: 65%;
+                        height: 100%;
+                        background-color: #6750a4;
+                        box-shadow: 10px;
+                        border-radius: 10px;
+                      }
+                      .lineLoading5 {
+                        display: block;
+                        position: absolute;
+                        width: 70%;
+                        height: 100%;
+                        background-color: #6750a4;
+                        box-shadow: 10px;
+                        border-radius: 10px;
+                      }
+                      .lineLoading6 {
+                        display: block;
+                        position: absolute;
+                        width: 90%;
+                        height: 100%;
+                        background-color: #6750a4;
+                        box-shadow: 10px;
+                        border-radius: 10px;
+                      }
+                      .lineLoading7 {
+                        display: block;
+                        position: absolute;
+                        width: 75%;
+                        height: 100%;
+                        background-color: #6750a4;
+                        box-shadow: 10px;
+                        border-radius: 10px;
+                      }
+                    }
+                  }
+                }
+              }
+              .sevenDayOfWeek {
+                align-items: center;
+                justify-content: center;
+                padding: 10px 0;
+                p {
+                  margin: 0 14px;
+                }
+              }
+            }
+          }
+          .topProductSeller {
+            .lineDashboard {
+              margin: 15px 0 0;
+            }
+            background-color: $-white;
+            border-radius: 10px;
+            .topProductSeller_item {
+              .ordertopProduct {
+                .ordertopProduct_items {
+                  height: 320px;
+                  overflow-y: scroll;
+                  .ordertopProduct_item {
+                    background-color: $light-on-fixed-variant;
+                    padding: 15px;
+                    .nameCategories {
+                      p,
+                      h2 {
+                        color: $-white;
+                      }
+                    }
+                    .priceProduct {
+                      text-align: end;
+                      p,
+                      h2 {
+                        color: $-white;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+          .totalProfit {
+            background-color: $-white;
+            border-radius: 10px;
+            .totalProfit_items {
+              p {
+                color: $light-on-container;
+              }
+            }
+          }
+        }
+      }
+      //      <!----======== End Overview Dashboard ======== -->
+    }
+  }
+  .adminFooter {
+    .col-6 {
+      p {
+        color: $secondary60;
+      }
+    }
+    ul {
+      display: flex;
+      justify-content: end;
+      li {
+        color: $secondary60;
+        margin: 0 15px;
+        list-style: none;
+        a {
+          text-decoration: none;
+          color: $secondary60;
+        }
+      }
+    }
+  }
+}
+
+* {
+  // border: 1px solid black;
+}
+
+@media only screen and (max-width: 46.1875em) {
+  #example1_wrapper {
+    overflow-x: scroll;
+  }
+  main,
+  #adminDashboard {
+    nav {
+      display: none !important;
+    }
+    .p30 {
+      padding: 15px;
+    }
+    .dashboard {
+      width: 100% !important;
+      left: 0 !important;
+      .top {
+        display: none;
+      }
+      .statisticalChart {
+        .statisticalChartItems {
+          .customerOrderStatistics {
+            .orderStatistics {
+              margin: 0;
+            }
+          }
+        }
+      }
+      .recentOrder {
+        .recentOrder_items {
+          overflow-x: scroll;
+        }
+      }
+      .containerAdmin {
+        #example1_wrapper {
+          overflow-x: scroll;
+        }
+      }
+    }
+  }
+
+  .owl-carousel {
+    .owl-item {
+      width: unset !important;
+    }
+    .owl-dots {
+      .owl-dot {
+        padding: 5px 30px !important;
+        box-shadow: unset;
+      }
+    }
+  }
+}
+/* Tablet: width >= 740px and width < 1024px */
+@media only screen and (min-width: 46.25em) and (max-width: 63.9375em) {
+}
+/* Mobile and Tablet: width < 1024px */
+@media only screen and (max-width: 63.9375em) {
+}
+@media only screen and (max-width: 815px) {
+  .containerAdmin {
+    width: 100% !important;
+    margin: unset !important;
+    #example1_wrapper {
+      overflow-x: scroll;
+    }
+  }
+}
+
+/* PC: width >= 1024px */
+@media only screen and (min-width: 64em) {
+}

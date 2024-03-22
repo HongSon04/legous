@@ -1,0 +1,60 @@
+.darkMode header {
+    background-color: #1c2339 !important;
+}
+#dark-light__mode {
+    width: 50px !important;
+    height: 22px;
+    padding: 0 5px;
+    background-color: #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 20px;
+    border: none;
+    /* border: 1px solid #c7c6c6; */
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+}
+#color__dark-light {
+    content: "";
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    /* background-color: #0285c5; */
+    background-color: orange;
+    left: 2px;
+    z-index: -1;
+    transition: all 0.3s ease;
+}
+#icon_sun {
+    color: white;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+#icon_moon {
+    color: gray;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+}
+.darkMode_active {
+    background-color: #2d2b37 !important;
+    transition: $trans-bounce !important;
+
+    #icon_sun {
+        color: gray;
+        font-size: 1rem;
+        transition: all 0.3s ease;
+    }
+    #icon_moon {
+        color: white;
+        font-size: 1.2rem;
+        transition: all 0.3s ease;
+    }
+
+    span {
+        transform: translateX(2.7rem) !important;
+        background-color: #0285c5 !important;
+    }
+}

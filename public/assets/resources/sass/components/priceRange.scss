@@ -1,0 +1,18 @@
+.ui-slider-range {
+    background-color: $light-primary !important;
+}
+
+.ui-slider-handle {
+    width: 2.5rem !important;
+    height: 2.5rem !important;
+    border-radius: 50% !important;
+    background-color: $light-background !important;
+    transition: $trans-bounce;
+    cursor: grab;
+}
+.ui-state-active,
+.ui-state-hover {
+    border: none !important;
+    box-shadow: 0 0 0 .6rem rgba($color: $light-primary, $alpha: .2) !important;
+    background: $light-primary !important;
+}

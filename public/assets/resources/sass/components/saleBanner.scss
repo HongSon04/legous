@@ -1,0 +1,8 @@
+.sale-banner {
+    background: $-black;
+    color: $-white;
+    .text-logo {
+        font-family: 'mainFont';
+        font-size: clamp(2.2rem, 0.629rem + 4.19vw, 4.4rem);
+    }
+}

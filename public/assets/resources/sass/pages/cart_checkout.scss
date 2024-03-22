@@ -1,0 +1,34 @@
+.checkout__form {
+    .checkout__main {
+        .form__group {
+            gap: .8rem;
+        }
+    }
+    .checkout__main--addon {
+        .addon-method {
+            cursor: pointer;
+            transition: $trans-bounce;
+            user-select: none;
+            &:hover {
+                background: $neutral99;
+            }
+        }
+        .addon-method.disabled {
+            color: $neutral70 !important;
+            opacity: 0.6;
+        }
+    }
+    * {
+        color: var(--m-3-sys-light-on-secondary-fixed, #1D192B);
+        
+    }
+}
+
+/* Mobile: with < 740px */
+@media only screen and (max-width: 46.1875em) {
+    
+}
+/* Tablet: width >= 740px and width < 1024px */
+@media only screen and (min-width: 46.25em) and (max-width: 63.9375em){
+    
+}

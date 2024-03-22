@@ -1,0 +1,31 @@
+.pagination {
+    flex-wrap: wrap;
+    &__item {
+        border-radius: .4rem;
+        color: $light-primary;
+        // padding: 1rem;
+        width: 3.6rem;
+        height: 3.6rem;
+        flex-shrink: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style-type: none;
+        transition: $trans-bounce;
+        &:hover {
+            background: $light-primary;
+            .pagination__link {
+                color: $-white !important;
+            }
+        }
+    }
+    &__item.active {
+        background: $light-primary;
+        .pagination__link {
+            color: $-white !important;
+        }
+    }
+    &__link {
+        color: $light-secondary;
+    }
+}

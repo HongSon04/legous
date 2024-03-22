@@ -1,0 +1,15 @@
+.category__name {
+    position: relative;
+    &::before {
+        content: '';
+        position: absolute;
+        width: 7rem;
+        height: .4rem;
+        background: $light-on-surface-variant;
+        border-radius: 10rem;
+    }
+}
+.filter-bar--respon {
+    position: sticky;
+    top: 0;
+}

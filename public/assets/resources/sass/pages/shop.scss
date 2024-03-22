@@ -1,0 +1,29 @@
+// || Responsive
+/* Mobile: with < 740px */
+@media only screen and (max-width: 46.1875em) {
+  .product__wrapper--without-carousel {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+  .shop__main__title {
+    display: block !important;
+  }
+  .mobile-top__bar {
+    display: flex !important;
+  }
+}
+/* Tablet: width >= 740px and width < 1024px */
+@media only screen and (min-width: 46.25em) and (max-width: 63.9375em) {
+}
+/* Mobile and Tablet: width < 1024px */
+@media only screen and (max-width: 63.9375em) {
+  .filter-btn,
+  .filter__list.open {
+    display: none !important;
+  }
+  .filter-bar--respon {
+    display: flex !important;
+  }
+}
+/* PC: width >= 1024px */
+@media only screen and (min-width: 64em) {
+}

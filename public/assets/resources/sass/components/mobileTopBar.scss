@@ -1,0 +1,63 @@
+.mobile-top__bar {
+    width: 100%;
+    display: none !important;
+    background: $-white;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    border-bottom: .1rem solid $neutral90;
+    
+    .member-widget {
+        .option__list {
+            right: 0;
+            background: $-white;
+            transition: $trans-bounce;
+            opacity: 0;
+            visibility: hidden;
+            
+            .option__item {
+                width: 20rem;
+                transition: $trans-bounce;
+                transform: translateY(1rem);
+            }
+            .option__link {
+                color: $light-on-container;
+                width: 100%;
+                display: block;
+                padding: 1.2rem;
+                &:hover {
+                    background: $neutral94;
+                }
+            }
+        }
+        .option__list.open {
+            opacity: 1;
+            visibility: visible;
+            .option__item {
+                transform: translateY(0)
+            }
+        }
+    }
+}
+
+
+
+// || Responsive 
+/* Mobile: with < 740px */
+@media only screen and (max-width: 46.1875em){
+    .mobile-top__bar {
+        display: flex !important;
+    }
+}
+/* Tablet: width >= 740px and width < 1024px */
+@media only screen and (min-width: 46.25em) and (max-width: 63.9375em){
+    
+}
+/* Mobile and Tablet: width < 1024px */
+@media only screen and (max-width: 63.9375em){
+    
+}
+/* PC: width >= 1024px */
+@media only screen and (min-width: 64em){
+
+}

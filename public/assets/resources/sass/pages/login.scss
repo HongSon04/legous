@@ -1,0 +1,135 @@
+.main__login-register {
+    width: 100%;
+    height: auto;
+    transition: $trans-bounce;
+
+    #login-section,
+    #register-section {
+        background-size: cover;
+        background-attachment: scroll;
+    }
+}
+.create-account__section {
+    background-image: url("/public/assets/media/images/banners/banner-login-1.svg");
+    height: 100vh;
+    &::before {
+        content: '';
+        border: 1px solid #FFF;
+        background:linear-gradient(151deg, rgba(255, 255, 255, 0.60) 1.06%, rgba(255, 255, 255, 0.10) 96.72%);
+        box-shadow: 0px 4px 25px 0px rgba(255, 255, 255, 0.25);
+        backdrop-filter: blur(.05rem);
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+    }
+    .form {
+        background: var(--m-3-white, #FFF);
+        padding: 28px ;
+        border-radius: 8px;
+        z-index: 99;
+            .form__title{
+                color: var(--m-3-black, #000);
+                font-family: 'Exo 2';
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 900;
+                line-height: normal;
+            }
+            .form__btn {
+                background: $-black;
+                border-radius: .4rem;
+                color: $-white;
+            }
+    }   
+    
+}
+.login__section{
+    background-image: url('/public/assets/media/images/banners/banner-login-2.svg');
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+    &::before {
+        content: '';
+        border: 1px solid #FFF;
+        background:linear-gradient(151deg, rgba(255, 255, 255, 0.60) 1.06%, rgba(255, 255, 255, 0.10) 96.72%);
+        box-shadow: 0px 4px 25px 0px rgba(255, 255, 255, 0.25);
+        backdrop-filter: blur(.05rem);
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: -999;
+        
+    }
+    .form {
+        background: var(--m-3-white, #FFF);
+        padding: 28px ;
+        border-radius: 8px;
+        z-index: 99;
+            .form__title{
+                color: var(--m-3-black, #000);
+                font-family: 'Exo 2';
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 900;
+                line-height: normal;
+            }
+        
+    }
+}
+.click {
+    cursor: pointer;
+    color: $light-primary;
+}
+
+//respon-mobile  login&register
+@media only screen and (max-width: 46.1875em){
+    .main__login-register{
+        .create-account__section{
+            padding: 1.6rem;
+            gap: 0;
+            background-image: none;
+            form{
+                width: 100%;
+                gap: 1.6rem;
+                box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+                border-radius: 1rem;
+            }
+            .form{
+                padding: 2rem;
+            }
+            
+            .login__banner{
+                background-image:none;
+            }
+        }
+        .login__section{
+            gap: 0;
+            padding: 1.6rem;
+            background-image:none;
+            form{
+                width: 100%;
+                gap: 1.6rem;
+                box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+                border-radius: 1rem;
+                
+            }
+            .form{
+                padding: 2rem;
+                gap: 1.6rem;
+            }
+            
+            .login__banner{
+                background-image:none;
+            }
+        }
+        
+    }
+    
+}
+
+// respon
+

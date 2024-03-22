@@ -1,0 +1,78 @@
+<html>
+<head>
+  <style>
+    /* Thiết lập kích thước cho bản đồ và khung hiển thị địa chỉ */
+    #map {
+      width: 600px;
+      height: 450px;
+    }
+    #address {
+      width: 600px;
+      height: 50px;
+      border: 1px solid black;
+      font-family: Arial, sans-serif;
+      font-size: 16px;
+      padding: 10px;
+    }
+  </style>
+  <!-- Nhúng API của Google map vào trang web -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBS6lGj7CsMDE5O9bMEf3I3anmfn34OBlA"></script>
+  <script>
+    // Khai báo biến toàn cục cho bản đồ, địa chỉ và trình mã hóa địa lý
+    var map, address, geocoder;
+
+    // Hàm khởi tạo bản đồ
+    function initMap() {
+      // Lấy phần tử HTML có id là map
+      map = document.getElementById("map");
+      // Lấy phần tử HTML có id là address
+      address = document.getElementById("address");
+      // Khởi tạo đối tượng trình mã hóa địa lý
+      geocoder = new google.maps.Geocoder();
+      // Tạo một đối tượng bản đồ mới với tọa độ và mức phóng mặc định
+      map = new google.maps.Map(map, {
+        center: {lat: 10.762622, lng: 106.660172},
+        zoom: 15
+      });
+      // Thêm sự kiện click cho bản đồ
+      map.addListener("click", function(event) {
+        // Lấy tọa độ của điểm được click
+        var latLng = event.latLng;
+        // Gọi hàm hiển thị địa chỉ
+        showAddress(latLng);
+      });
+    }
+
+    // Hàm hiển thị địa chỉ
+    function showAddress(latLng) {
+      // Sử dụng trình mã hóa địa lý để lấy thông tin địa điểm từ tọa độ
+      geocoder.geocode({'location': latLng}, function(results, status) {
+        // Nếu trạng thái thành công
+        if (status == 'OK') {
+          // Nếu có kết quả trả về
+          if (results[0]) {
+            // Lấy địa chỉ định dạng của kết quả đầu tiên
+            var formatted_address = results[0].formatted_address;
+            // Hiển thị địa chỉ lên khung HTML
+            address.innerHTML = "Địa chỉ: " + formatted_address;
+          } else {
+            // Nếu không có kết quả trả về, hiển thị thông báo
+            address.innerHTML = "Không tìm thấy địa chỉ";
+          }
+        } else {
+          // Nếu trạng thái không thành công, hiển thị thông báo lỗi
+          address.innerHTML = "Lỗi: " + status;
+        }
+      });
+    }
+  </script>
+</head>
+<body>
+  <!-- Gọi hàm khởi tạo bản đồ khi tải trang web -->
+  <body onload="initMap()">
+    <!-- Tạo một khung HTML để hiển thị bản đồ -->
+    <div id="map"></div>
+    <!-- Tạo một khung HTML để hiển thị địa chỉ -->
+    <div id="address"></div>
+  </body>
+</html>

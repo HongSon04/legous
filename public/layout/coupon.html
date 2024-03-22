@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LEGOUS - COUPON</title>
+    <link rel="stylesheet" href="/public/assets/resources/sass/css/app.css">
+    <link rel="icon" type="image/x-icon" href="/views/public/assets/media/images/favicon/favicon.svg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/gh/hung1001/font-awesome-pro@4cac1a6/css/all.css" rel="stylesheet"
+        type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Space+Mono&display=swap"
+        rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.jLOs"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="/public/assets/resources/js/jquery.js"></script>
+</head>
+
+</head>
+<body>
+    <div class="container-full">
+        <!-- shop mobile top navigation bar start -->
+        <div class="mobile-top__bar mobile-top__bar--shop p12 flex-center">
+            <div class="mobile-top__inner flex-full flex-between v-center g12">
+                <div class="flex v-center g12">
+                    <button class="icon-btn back-btn"><i class="fal fa-chevron-left"></i></button>
+                    <h4 class="title-large fw-black">Add coupon</h4>
+                </div>
+
+                <!-- guest widget -->
+                <!-- <button class="icon-btn user-btn"><i class="fal fa-user"></i></button> -->
+
+                <!-- member widget -->
+                <div class="por member-widget">
+                    <button class="icon-btn more-btn"><i class="far fa-ellipsis-h"></i></button>
+                    <ul class="poa option__list oh p10 box-shadow1 rounded-8">
+                        <li class="option__item">
+                            <a href="#" class="option__link ttc">trang chủ</a>
+                        </li>
+                        <li class="option__item">
+                            <a href="#" class="option__link ttc">chia sẻ</a>
+                        </li>
+                        <li class="option__item">
+                            <a href="#" class="option__link ttc">tìm kiếm</a>
+                        </li>
+                        <li class="option__item">
+                            <a href="#" class="option__link ttc">tin nhắn</a>
+                        </li>
+                        <li class="option__item">
+                            <a href="#" class="option__link ttc">tài khoản của tôi</a>
+                        </li>
+                        <li class="option__item">
+                            <a href="#" class="option__link ttc">báo cáo</a>
+                        </li>
+                        <li class="option__item">
+                            <a href="#" class="option__link ttc">trợ giúp</a>
+                        </li>
+                        <li class="option__item">
+                            <a href="#" class="option__link ttc">phản hồi</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- shop mobile top navigation bar end -->
+
+        <!-- add coupon section start -->
+        <section class="section add-coupon__section mt80">
+            <form action="" class="form add-coupon__form">
+                <div class="form__group mt12">
+                    <input type="text" class="form__input coupon__input" placeholder="Your coupon">
+                    <span class="form__message"></span>
+                </div>
+                <button class="form__btn btn primary-btn rounded-8 full"><i class="fal fa-arrow-right"></i>Add coupon</button>
+            </form>
+        </section>
+        <!-- add coupon section end -->
+
+        <!-- collect more coupon section start -->
+        <section class="section collect-coupon__section">
+            <h4 class="title-large fw-black mb12">Collect more coupon</h4>
+            <div class="coupon__wrapper flex-column g12">
+                <!-- single coupon item start -->
+                <div class="coupon__item flex-between p12 rounded-8">
+                    <div class="flex g12 v-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+  <path d="M3 9C3 7.60218 3 6.90326 3.22836 6.35195C3.53284 5.61687 4.11687 5.03284 4.85195 4.72836C5.40326 4.5 6.10218 4.5 7.5 4.5H16.5C17.8978 4.5 18.5967 4.5 19.1481 4.72836C19.8831 5.03284 20.4672 5.61687 20.7716 6.35195C21 6.90326 21 7.60218 21 9V9.75C21 10.1642 20.6642 10.5 20.25 10.5H20C18.8954 10.5 18 11.3954 18 12.5V12.5C18 13.6046 18.8954 14.5 20 14.5H20.25C20.6642 14.5 21 14.8358 21 15.25V16C21 17.3978 21 18.0967 20.7716 18.6481C20.4672 19.3831 19.8831 19.9672 19.1481 20.2716C18.5967 20.5 17.8978 20.5 16.5 20.5H7.5C6.10218 20.5 5.40326 20.5 4.85195 20.2716C4.11687 19.9672 3.53284 19.3831 3.22836 18.6481C3 18.0967 3 17.3978 3 16V15.25C3 14.8358 3.33579 14.5 3.75 14.5H4C5.10457 14.5 6 13.6046 6 12.5V12.5C6 11.3954 5.10457 10.5 4 10.5H3.75C3.33579 10.5 3 10.1642 3 9.75V9Z" stroke="#33363F" stroke-width="2"/>
+  <path d="M11.5568 11.1885C11.7249 10.7536 11.809 10.5361 11.9455 10.5059C11.9814 10.498 12.0186 10.498 12.0545 10.5059C12.191 10.5361 12.2751 10.7536 12.4432 11.1885C12.5389 11.4359 12.5867 11.5596 12.6761 11.6437C12.7012 11.6673 12.7284 11.6883 12.7574 11.7065C12.8608 11.7711 12.9899 11.7831 13.248 11.8071C13.685 11.8477 13.9035 11.868 13.9702 11.9973C13.984 12.0241 13.9934 12.0531 13.998 12.0831C14.0201 12.2279 13.8595 12.3796 13.5383 12.6829L13.449 12.7671C13.2989 12.9089 13.2238 12.9798 13.1803 13.0683C13.1543 13.1213 13.1368 13.1785 13.1286 13.2375C13.115 13.3358 13.137 13.4386 13.1809 13.6443L13.1967 13.7178C13.2755 14.0867 13.315 14.2712 13.2657 14.3618C13.2215 14.4433 13.1401 14.4954 13.0501 14.4999C12.9499 14.5048 12.8088 14.3855 12.5265 14.1468C12.3406 13.9895 12.2476 13.9109 12.1443 13.8802C12.05 13.8521 11.95 13.8521 11.8557 13.8802C11.7524 13.9109 11.6594 13.9895 11.4735 14.1468C11.1912 14.3855 11.0501 14.5048 10.9499 14.4999C10.8599 14.4954 10.7785 14.4433 10.7343 14.3618C10.685 14.2712 10.7245 14.0867 10.8033 13.7178L10.8191 13.6443C10.863 13.4386 10.885 13.3358 10.8714 13.2375C10.8632 13.1785 10.8457 13.1213 10.8197 13.0683C10.7762 12.9798 10.7011 12.9089 10.551 12.7671L10.4617 12.6829C10.1405 12.3796 9.97989 12.2279 10.002 12.0831C10.0066 12.0531 10.016 12.0241 10.0298 11.9973C10.0965 11.868 10.315 11.8477 10.752 11.8071C11.0101 11.7831 11.1392 11.7711 11.2426 11.7065C11.2716 11.6883 11.2988 11.6673 11.3239 11.6437C11.4133 11.5596 11.4611 11.4359 11.5568 11.1885Z" fill="#33363F" stroke="#33363F"/>
+</svg>
+                        <div class="flex-column flex-between">
+                            <div class="coupon__code title-medium fw-black">KDFASDIWEADF</div>
+                            <div class="coupon__code body-small">Sale off 20%</div>
+                        </div>
+                    </div>
+                    <div class="icon-btn fab fab-primary"><i class="fal fa-plus"></i></div>
+                </div>
+                <!-- single coupon item end -->
+
+                <div class="coupon__item flex-between p12 rounded-8">
+                    <div class="flex g12 v-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+  <path d="M3 9C3 7.60218 3 6.90326 3.22836 6.35195C3.53284 5.61687 4.11687 5.03284 4.85195 4.72836C5.40326 4.5 6.10218 4.5 7.5 4.5H16.5C17.8978 4.5 18.5967 4.5 19.1481 4.72836C19.8831 5.03284 20.4672 5.61687 20.7716 6.35195C21 6.90326 21 7.60218 21 9V9.75C21 10.1642 20.6642 10.5 20.25 10.5H20C18.8954 10.5 18 11.3954 18 12.5V12.5C18 13.6046 18.8954 14.5 20 14.5H20.25C20.6642 14.5 21 14.8358 21 15.25V16C21 17.3978 21 18.0967 20.7716 18.6481C20.4672 19.3831 19.8831 19.9672 19.1481 20.2716C18.5967 20.5 17.8978 20.5 16.5 20.5H7.5C6.10218 20.5 5.40326 20.5 4.85195 20.2716C4.11687 19.9672 3.53284 19.3831 3.22836 18.6481C3 18.0967 3 17.3978 3 16V15.25C3 14.8358 3.33579 14.5 3.75 14.5H4C5.10457 14.5 6 13.6046 6 12.5V12.5C6 11.3954 5.10457 10.5 4 10.5H3.75C3.33579 10.5 3 10.1642 3 9.75V9Z" stroke="#33363F" stroke-width="2"/>
+  <path d="M11.5568 11.1885C11.7249 10.7536 11.809 10.5361 11.9455 10.5059C11.9814 10.498 12.0186 10.498 12.0545 10.5059C12.191 10.5361 12.2751 10.7536 12.4432 11.1885C12.5389 11.4359 12.5867 11.5596 12.6761 11.6437C12.7012 11.6673 12.7284 11.6883 12.7574 11.7065C12.8608 11.7711 12.9899 11.7831 13.248 11.8071C13.685 11.8477 13.9035 11.868 13.9702 11.9973C13.984 12.0241 13.9934 12.0531 13.998 12.0831C14.0201 12.2279 13.8595 12.3796 13.5383 12.6829L13.449 12.7671C13.2989 12.9089 13.2238 12.9798 13.1803 13.0683C13.1543 13.1213 13.1368 13.1785 13.1286 13.2375C13.115 13.3358 13.137 13.4386 13.1809 13.6443L13.1967 13.7178C13.2755 14.0867 13.315 14.2712 13.2657 14.3618C13.2215 14.4433 13.1401 14.4954 13.0501 14.4999C12.9499 14.5048 12.8088 14.3855 12.5265 14.1468C12.3406 13.9895 12.2476 13.9109 12.1443 13.8802C12.05 13.8521 11.95 13.8521 11.8557 13.8802C11.7524 13.9109 11.6594 13.9895 11.4735 14.1468C11.1912 14.3855 11.0501 14.5048 10.9499 14.4999C10.8599 14.4954 10.7785 14.4433 10.7343 14.3618C10.685 14.2712 10.7245 14.0867 10.8033 13.7178L10.8191 13.6443C10.863 13.4386 10.885 13.3358 10.8714 13.2375C10.8632 13.1785 10.8457 13.1213 10.8197 13.0683C10.7762 12.9798 10.7011 12.9089 10.551 12.7671L10.4617 12.6829C10.1405 12.3796 9.97989 12.2279 10.002 12.0831C10.0066 12.0531 10.016 12.0241 10.0298 11.9973C10.0965 11.868 10.315 11.8477 10.752 11.8071C11.0101 11.7831 11.1392 11.7711 11.2426 11.7065C11.2716 11.6883 11.2988 11.6673 11.3239 11.6437C11.4133 11.5596 11.4611 11.4359 11.5568 11.1885Z" fill="#33363F" stroke="#33363F"/>
+</svg>
+                        <div class="flex-column flex-between">
+                            <div class="coupon__code title-medium fw-black">KDFASDIWEADF</div>
+                            <div class="coupon__code body-small">Sale off 20%</div>
+                        </div>
+                    </div>
+                    <div class="icon-btn fab fab-primary"><i class="fal fa-plus"></i></div>
+                </div>
+            </div>
+        </section>
+        <!-- collect more coupon section end -->
+    </div>
+</body>
+</html>
+<script src="/public/assets/resources/js/main.js"></script>
+<script src="/public/assets/resources/js/slickEdit.js"></script>

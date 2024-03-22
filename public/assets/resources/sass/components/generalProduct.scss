@@ -1,0 +1,85 @@
+.product {
+    display: grid !important;
+    grid-row: span 4;
+    grid-template-rows: subgrid;
+    gap: 1.2rem;
+    &__overlay {
+        background: rgba($color: $-black, $alpha: .5);
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        visibility: hidden;
+        .icon-btn {
+            background: $-white !important;
+            color: $-black !important;
+            transition: $trans-bounce;
+            transform: translateY(1rem);
+            &:hover {   
+                opacity: 0.8;
+            }
+        }   
+        .love-btn {
+            background: $-pink;
+            color: $-white;
+
+            &:hover {
+                opacity: 0.8;
+                background: $-pink;
+                color: $-white;
+            }
+        }
+        .love-btn.active {
+            background: $-pink !important;
+            color: $-white !important;
+        }
+    }
+    &__carousel {
+        padding: 1rem;
+        .product__info__name {
+            display:-webkit-box;
+            -webkit-line-clamp:2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            word-break: break-word;
+        }
+    }
+    &__banner {
+        display: block;
+        width: 100%;
+        aspect-ratio: 1;
+        &:hover > .product__overlay{
+            opacity: 1;
+            visibility: visible;
+            .icon-btn {
+                transform: translateY(0);
+            }
+        }
+    }
+    &__info {
+        color: var(--m-3-sys-light-on-secondary-container, #1D192B);
+        &__rated {
+            .start {
+                color: $-yellow;
+            }
+        }
+        &__name {
+            display:-webkit-box;
+            -webkit-line-clamp:2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            word-break: break-word;
+        }
+    }
+    &__spotlight {
+        &__banner {
+            width: 100%;
+            aspect-ratio: 1;
+        }
+    }
+}
+
+.slick-list {
+    width: 100%;
+}
